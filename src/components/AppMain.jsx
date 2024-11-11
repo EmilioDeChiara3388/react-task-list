@@ -88,26 +88,27 @@ export default function AppMain() {
     return (
         <main>
             <section className="current">
-                <h2>Current Task</h2>
+                <h2 className="sectionTitle">Current Task ({currentTasks.length})</h2>
                 <ul>
                     {currentTasks.map(currentTask => {
-                        return <li key={currentTask.id}>
-                            <p>{currentTask.title}<span>{currentTask.state}</span></p>
+                        return <li className="listItem" key={currentTask.id}>
+                            <p className="itemTitle">{currentTask.title}<span className="state">{currentTask.state}</span></p>
                             <p>Priority: {currentTask.priority}</p>
-                            <p>Est time {currentTask.estimatedTime}</p>
+                            <p>Est. time {currentTask.estimatedTime}</p>
                         </li>
 
                     })}
                 </ul>
+                <hr />
             </section>
             <section className="completed">
-                <h2>Completed Task</h2>
+                <h2 className="sectionTitle">Completed Task ({completedTasks.length})</h2>
                 <ul>
                     {completedTasks.map(completedTask => {
-                        return <li key={completedTask.id}>
-                            <p>{completedTask.title}<span>{completedTask.state}</span></p>
+                        return <li className="listItem" key={completedTask.id}>
+                            <p className="itemTitle">{completedTask.title}<span className="state">{completedTask.state}</span></p>
                             <p>Priority: {completedTask.priority}</p>
-                            <p>Est time {completedTask.estimatedTime}</p>
+                            <p>Est. time {completedTask.estimatedTime}</p>
                         </li>
 
                     })}

@@ -8,3 +8,40 @@ header {
     background-color: aqua;
     padding: 1rem;
 }
+
+.current,
+.completed {
+    margin: 1.5rem;
+}
+
+.sectionTitle {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.listItem {
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.2;
+}
+
+.itemTitle {
+    font-weight: bold;
+}
+
+.state {
+    margin-left: 0.5rem;
+    background-color: orangered;
+    color: white;
+    font-weight: lighter;
+    padding: 0.25rem;
+}
+
+hr {
+    margin-top: 1.5rem;
+}
