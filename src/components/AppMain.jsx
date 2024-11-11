@@ -75,10 +75,8 @@ const tasks = [
 
 const completedTasks = tasks.filter(task => task.state === "completed")
 //console.log(completedTask);
-
 const currentTasks = tasks.filter(task => task.state !== "completed")
 //console.log(currentTask);
-
 //console.log(tasks);
 
 export default function AppMain() {
@@ -93,7 +91,6 @@ export default function AppMain() {
                             <p>Priority: {currentTask.priority}</p>
                             <p>Est. time {currentTask.estimatedTime}</p>
                         </li>
-
                     })}
                 </ul>
                 <hr />
@@ -107,7 +104,6 @@ export default function AppMain() {
                             <p>Priority: {completedTask.priority}</p>
                             <p>Est. time {completedTask.estimatedTime}</p>
                         </li>
-
                     })}
                 </ul>
             </section>
